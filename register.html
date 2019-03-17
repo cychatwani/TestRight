@@ -54,11 +54,20 @@
           <br>
           <!-- Nav pills -->
           <ul class="nav nav-pills nav-justified" role="tablist">
+            <style type="text/css">
+            a#Examiner.active{
+              background-color:  #1e2bbf;
+            }
+            a#Examiner:not(.active){
+              background-color:  #white;
+              color:#1e2bbf;
+            }
+            </style>
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="pill" href="#home">Examiner</a>
+              <a class="nav-link active " id="Examiner" data-toggle="pill" href="#home">Examiner</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="pill" href="#menu1">Student</a>
+              <a class="nav-link" id="Examiner" data-toggle="pill" href="#menu1">Student</a>
             </li>
           </ul>
         
@@ -71,13 +80,13 @@
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="usremail" placeholder="someone@abc.com" required>
+                <input type="email" class="form-control" id="usremail" placeholder="someoneAwesome@daiict.ac.in" required>
               </div>
               <div class="form-group">
                 <label for="name">Password</label>
                 <input type="password" class="form-control" id="usrpass" placeholder="**********" required>
               </div>
-              <button type="button" class="btn btn-warning btn-block">Continue>></button> 
+              <button type="button" class="btn btn-success btn-block" style="background-color: #1e2bbf">Continue>></button> 
             </div>
             <div id="menu1" class="container tab-pane fade"><br>
               <div class="form-group">
@@ -86,13 +95,13 @@
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="usremail" placeholder="someone@abc.com" required>
+                <input type="email" class="form-control" id="usremail" placeholder="someoneAwesome@daiict.ac.in" required>
               </div>
               <div class="form-group">
                 <label for="name">Password</label>
                 <input type="password" class="form-control" id="usrpass" placeholder="**********" required>
               </div>
-              <button type="button" class="btn btn-success btn-block">Register</button> 
+              <button type="button" class="btn btn-success btn-block"  style="background-color: #1e2bbf">Register</button> 
             </div>
             </div>
           </div>
