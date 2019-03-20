@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--Orignal-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Home Page</title>
+    <meta name="author" content="Pratibha Hotwani" />
+    <meta name="Resource-type" content="Document" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="homepage/fullpage.js"></script>
+	<script type="text/javascript" src="homepage/examples.js"></script>
+	<link rel="stylesheet" type="text/css" href="homepage/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="homepage/examples.css" />
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#fullpage').fullpage({
+                sectionsColor: [],
+                navigation: true,
+                slidesNavigation: true,
+            });
+            $('#moveSectionUp').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionUp();
+            });
+
+            $('#moveSectionDown').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+    </script>
+<!--Orignal-->
+<!--From Our Template-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!--Font awesome icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<!--From Our Template-->
+<style>
+#actions{
+        position:relative;
+		z-index:1000 !important;
+       
+    }
+
+</style>
+</head>
+<body>
+<div id="actions">
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark" >
+        <a class="navbar-brand" href="#" style="font-family: product sans">TEST RIGHT EXAM TOOLS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-sm-auto">
+            <li class="nav-item">
+              <a href="#" style="text-align: start;"class="btn btn-danger" role="button"  >Login</a>
+            </li> 
+          </ul>
+		</div>  
+    </nav>
+</div>
+
+<div id="fullpage">
+    <div class="section">
+	<!---->
+	
+         <center> <div class="img-fluid img-responsive mx-auto center-block"><img src="logo_final_v1.png"  height="200vh" width="500vw"></img></div></center>
+        <br/>
+
+        <div class="text-center text-justify" style="font-family: product sans; text-align: justify; width: 95vw">
+            Lorem Ipsum is simply dummy text of the printing and
+             typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer took a galley of type
+               and scrambled it to make a type specimen book. It has survived not only 
+               five centuries, but also the leap into electronic typesetting, remaining 
+               
+        </div>
+
+            <br/>
+            <br/>
+    </div>
+    <div class="section">
+     
+    <center> <div class="img-fluid img-responsive mx-auto center-block"><img src="logo2.png"  height="200vh" width="500vw"></img></div></center>
+    <div class="text-center text-justify" style="font-family: product sans; text-align: justify; width: 95vw">
+      <br/>
+  <br/> 
+		 Lorem Ipsum is simply dummy text of the printing and
+             typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer took a galley of type
+               and scrambled it to make a type specimen book. It has survived not only 
+               five centuries, but also the leap into electronic typesetting, remaining 
+			   <br/>
+			   <br/>
+			   <br/>
+</div>
+    </div>
+    <div class="section" style="background: linear-gradient(to bottom,white 50%,#337ab7 50% );">
+    </div>
+
+</div>
+</body>
+</html>
